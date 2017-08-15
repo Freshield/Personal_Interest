@@ -1,0 +1,13 @@
+*.gz
+logs
+MNIST
+files
+facebook_file
+*.csv
+tmp
+modules
+*.json
+*.meta
+module
+interrupt
+*.asv
