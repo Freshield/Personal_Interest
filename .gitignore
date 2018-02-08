@@ -14,3 +14,5 @@ interrupt
 *.npy
 *.dcm
 testing_ignore
+*.rar
+*.7z
