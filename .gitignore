@@ -11,3 +11,5 @@ modules
 module
 interrupt
 *.asv
+*npy
+*dcm
