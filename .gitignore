@@ -1,4 +1,6 @@
 *.gz
+*.tfrecords
+*.tfrecord
 logs
 MNIST
 files
@@ -11,8 +13,14 @@ modules
 module
 interrupt
 *.asv
-*.npy
-*.dcm
-testing_ignore
 *.rar
-*.7z
+*.zip
+*.gz
+*.tar
+model
+*.bin
+data
+*.npy
+*.nii
+Data
+.dcm
