@@ -1,3 +1,6 @@
+import tensorflow as tf
+
+print(type(tf.train.AdamOptimizer()))
 
 class Mouth(object):
 
