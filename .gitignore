@@ -24,3 +24,5 @@ data
 *.nii
 Data
 .dcm
+*.mp3
+*.wav
