@@ -25,3 +25,13 @@ with h5py.File('data/b2.h5', 'w') as f:
     print(out.shape)
     dset[0:10, 20:70] = out * 2
 
+    out = dset[:, 0:50]
+    print(out.shape)
+    means = out.mean(axis=1)
+    print(means.shape)
+
+    out = np.empty((100, 50), dtype=np.float32)
+    dset.read_direct(out, np.s_[:, 0:50])
+    means = out.mean(axis=1)
+    print(means.shape)
+
