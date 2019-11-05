@@ -15,6 +15,7 @@
     <SUITE FILE_PATH="coverage/a14_try_hdf5$b4_extend_dataset.coverage" NAME="b4_extend_dataset Coverage Results" MODIFIED="1572770315662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/a14_try_hdf5$b5_creating_a_file.coverage" NAME="b5_creating_a_file Coverage Results" MODIFIED="1583744765542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/a14_try_hdf5$b1_try_first.coverage" NAME="b1_try_first Coverage Results" MODIFIED="1583741677660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/a14_try_hdf5$b6_core_concepts.coverage" NAME="b6_core_concepts Coverage Results" MODIFIED="1572687447824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/a14_try_hdf5$b3_block_store.coverage" NAME="b3_block_store Coverage Results" MODIFIED="1572683645037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -22,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b1_try_first.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="616">
               <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
                 <element signature="e#504#515#0" expanded="true" />
@@ -34,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b2_slice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="396">
               <caret line="19" column="39" selection-start-line="15" selection-start-column="3" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="e#500#518#0" expanded="true" />
@@ -59,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/b4_extend_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
                 <element signature="e#509#527#0" expanded="true" />
               </folding>
@@ -67,13 +68,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b5_creating_a_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="440">
+              <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="60" />
               <folding>
                 <element signature="e#510#521#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/b6_core_concepts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+              <folding>
+                <element signature="e#508#514#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +112,7 @@
         <option value="$PROJECT_DIR$/b3_block_store.py" />
         <option value="$PROJECT_DIR$/b4_extend_dataset.py" />
         <option value="$PROJECT_DIR$/b5_creating_a_file.py" />
+        <option value="$PROJECT_DIR$/b6_core_concepts.py" />
       </list>
     </option>
   </component>
@@ -124,6 +138,11 @@
               <item name="a14_try_hdf5" type="b2602c69:ProjectViewProjectNode" />
               <item name="a14_try_hdf5" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="a14_try_hdf5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a14_try_hdf5" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -148,29 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.b5_creating_a_file">
-    <configuration name="b1_try_first" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="a14_try_hdf5" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b1_try_first.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.b6_core_concepts">
     <configuration name="b2_slice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="a14_try_hdf5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,13 +256,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="b6_core_concepts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="a14_try_hdf5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b6_core_concepts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.b6_core_concepts" />
         <item itemvalue="Python.b5_creating_a_file" />
         <item itemvalue="Python.b4_extend_dataset" />
         <item itemvalue="Python.b3_block_store" />
         <item itemvalue="Python.b2_slice" />
-        <item itemvalue="Python.b1_try_first" />
       </list>
     </recent_temporary>
   </component>
@@ -281,21 +300,23 @@
       <updated>1583740363084</updated>
       <workItem from="1583740364150" duration="877000" />
       <workItem from="1572336992633" duration="2855000" />
+      <workItem from="1572685609824" duration="1717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3732000" />
+    <option name="totallyTimeSpent" value="5449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="395" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2556724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -304,7 +325,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37656903" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.37656903" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -319,7 +340,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/b1_try_first.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="616">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
             <element signature="e#504#515#0" expanded="true" />
@@ -329,7 +350,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/b2_slice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="396">
           <caret line="19" column="39" selection-start-line="15" selection-start-column="3" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="e#500#518#0" expanded="true" />
@@ -350,7 +371,7 @@
     <entry file="file://$PROJECT_DIR$/b4_extend_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#509#527#0" expanded="true" />
           </folding>
@@ -359,10 +380,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/b5_creating_a_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="440">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="60" />
           <folding>
             <element signature="e#510#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b6_core_concepts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding>
+            <element signature="e#508#514#0" expanded="true" />
           </folding>
         </state>
       </provider>
