@@ -28,33 +28,37 @@ f1 = h5py.File('data/small_model.h5', 'w')
 for key, attr in f.attrs.items():
     f1.attrs[key] = attr
 
-for key, value in f.items():
-    print(key)
-    print(value)
-    print(value.name)
-    print()
+# for key, value in f.items():
+#     print(key)
+#     print(value)
+#     print(value.name)
+#     print()
 
 
-def getitems(input_item):
+def get_hdf5_data_list(input_item):
     rst_list = []
-    if type(input_item) == h5py._hl.files.File:
+    if type(input_item) == h5py.File:
         for key, value in input_item.items():
-            rst_list += getitems(value)
+            rst_list += get_hdf5_data_list(value)
     elif type(input_item) == h5py.Group:
         if len(input_item) == 0:
             rst_list.append((input_item.name, None))
         else:
             for key, value in input_item.items():
-                rst_list += getitems(value)
+                rst_list += get_hdf5_data_list(value)
     elif type(input_item) == h5py.Dataset:
         a = input_item[:]
         rst_list.append((input_item.name, a.copy()))
+    else:
+        print(type(input_item))
 
     return rst_list
 
 
 
-rst_list = getitems(f)
+rst_list = get_hdf5_data_list(f)
+
+print(rst_list)
 
 for i in range(100):
     if rst_list[i][1] is None:
