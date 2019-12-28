@@ -18,10 +18,11 @@ import cv2
 import numpy as np
 
 
-def gray(img_data):
+def gray(img_data, return_int=True):
     img_data = cv2.cvtColor(img_data, cv2.COLOR_BGR2RGB)
     img_data = np.dot(img_data[...,:3], [0.299, 0.587, 0.114])
-    img_data = img_data.astype(np.uint8)
+    if return_int:
+        img_data = img_data.astype(np.uint8)
     # img_data = np.stack([img_data,img_data,img_data], axis=2)
     # img_data = img_data[...,0]
     # img_data = cv2.cvtColor(img_data, cv2.COLOR_BGR2GRAY)
