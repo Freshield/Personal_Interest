@@ -18,7 +18,7 @@ import math
 import numpy as np
 
 
-def gradients(img_data, eps=1e-6, return_int=True):
+def gradients(img_data, eps=1e-8, return_int=True):
     """使用sobel算子得到梯度图"""
     W, H = img_data.shape
     dx = np.zeros((W-2, H-2))
@@ -38,7 +38,7 @@ def gradients(img_data, eps=1e-6, return_int=True):
 
             M[i, j] = np.sqrt(np.square(dx[i, j]) + np.square(dy[i, j]))
 
-            theta[i, j] = math.atan(dx[i, j] / (dy[i, j] + eps) + eps)
+            theta[i, j] = math.atan(dx[i, j] / (dy[i, j] + eps))
 
     if return_int:
         dx = dx.astype(np.uint8)
