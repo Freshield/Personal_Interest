@@ -36,9 +36,10 @@ def nms(M, dx, dy, return_int=True):
                 # 如果y方向梯度大
                 if np.abs(gradY) > np.abs(gradX):
                     weight = np.abs(gradX) / np.abs(gradY)
-                    grad2 = d[i, j-1]
-                    grad4 = d[i, j+1]
-
+                    # grad2 = d[i, j-1]
+                    # grad4 = d[i, j+1]
+                    grad2 = d[i-1, j]
+                    grad4 = d[i+1, j]
 
                     # 如果x，y符号一致
                     # g1 g2
@@ -53,22 +54,28 @@ def nms(M, dx, dy, return_int=True):
                     #    c
                     # g3 g4
                     else:
-                        grad1 = d[i+1, j-1]
-                        grad3 = d[i-1, j+1]
+                        # grad1 = d[i+1, j-1]
+                        # grad3 = d[i-1, j+1]
+                        grad1 = d[i-1, j+1]
+                        grad3 = d[i+1, j-1]
 
                 # 如果x方向梯度大
                 else:
                     weight = np.abs(gradY) / np.abs(gradX)
-                    grad2 = d[i-1, j]
-                    grad4 = d[i+1, j]
+                    # grad2 = d[i-1, j]
+                    # grad4 = d[i+1, j]
+                    grad2 = d[i, j-1]
+                    grad4 = d[i, j+1]
 
                     # 如果x，y方向一致
                     #      g3
                     # g2 c g4
                     # g1
                     if gradX * gradY > 0:
-                        grad1 = d[i-1, j+1]
-                        grad3 = d[i+1, j-1]
+                        # grad1 = d[i-1, j+1]
+                        # grad3 = d[i+1, j-1]
+                        grad1 = d[i+1, j-1]
+                        grad3 = d[i-1, j+1]
 
                     # 如果x，y方向相反
                     # g1
