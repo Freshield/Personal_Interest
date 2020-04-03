@@ -52,15 +52,15 @@ if __name__ == '__main__':
     from b3_gradients import gradients
     from b4_nms import nms
 
-    img_path = 'data/test.jpg'
+    img_path = 'data/test1.png'
     img_data = get_img_data(img_path)
-    # img_data = gray(img_data)
+    img_data = gray(img_data)
     # img_data = smooth(img_data, return_int=False)
     # dx, dy, M, theta = gradients(img_data, return_int=False)
     # nms = nms(M, dx, dy, return_int=True)
     # img_data = double_threshold(nms)
-
-    canny = cv2.Canny(img_data, 50, 100)
+    # img_data = cv2.GaussianBlur(img_data, (3,3), 0)
+    # canny = cv2.Canny(img_data, 50, 100)
 
     # print(img_data.shape)
     # print(dx.shape)
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     # cv2.imshow('M', M)
     # cv2.imshow('nms', nms)
     cv2.imshow('test', img_data)
-    cv2.imshow('canny', canny)
+    # cv2.imshow('canny', canny)
     # cv2.imshow('dx', dx)
     # cv2.imshow('dy', dy)
     # cv2.imshow('M', M)
