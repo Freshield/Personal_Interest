@@ -1,0 +1,2 @@
+ conda update conda -n base -y
+ conda install --channel https://conda.anaconda.org/conda-forge -y uwsgi
