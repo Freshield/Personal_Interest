@@ -27,3 +27,8 @@ Data
 *.mp3
 *.wav
 *.ogg
+*.DS_Store
+*.pyc
+*.png
+*.jpg
+*chromedriver
