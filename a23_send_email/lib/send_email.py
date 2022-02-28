@@ -22,7 +22,7 @@ from email.mime.multipart import MIMEMultipart
 
 def send_email(
         mail_sender, mail_license, receiver, title, send_text,
-        mail_host='smtp.163.com', port=25):
+        mail_host='smtp.163.com', port=25, type='html'):
     """向目标邮箱发送邮件"""
     receivers = [receiver]
 
@@ -34,7 +34,7 @@ def send_email(
     mm["Subject"] = Header(subject_content, 'utf-8')
 
     body_content = send_text
-    message_text = MIMEText(body_content, 'plain', 'utf-8')
+    message_text = MIMEText(body_content, type, 'utf-8')
     mm.attach(message_text)
 
     stp = smtplib.SMTP()
