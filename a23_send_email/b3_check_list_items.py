@@ -31,6 +31,10 @@ def get_item_list(text, title):
 
 
 if __name__ == '__main__':
+    import random
+    for i in range(30):
+        print(2 + 2*random.random())
+
     a = {key: True for key in range(10)}
     print(a)
     a.update({key: True for key in range(20)})

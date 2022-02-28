@@ -15,8 +15,10 @@
 @==============================================@
 """
 import time
+import random
 import traceback
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver import ChromeOptions
 from config import mail_sender, mail_license, mail_receiver
 from lib.init_items_info import init_items_info
@@ -37,38 +39,46 @@ if __name__ == '__main__':
     option.add_argument('--headless')
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
     option.add_argument('user-agent={0}'.format(user_agent))
-    browser = webdriver.Chrome('./chromedriver', chrome_options=option)
-    browser.set_window_size(2500, 1200)
 
-    print('Init the items info')
-    last_price, last_item_dict = init_items_info(browser, url)
-    print(f'project {project_name}: Begin floor price: {last_price}')
-    try:
-        while True:
-            floor_price, item_list = get_items_info(browser, url)
-            print(f'project {project_name}: last {last_price}, now {floor_price}')
-            # 如果小则发邮件
-            if floor_price < last_price:
-                title = f'project {project_name}: floor price {last_price} -> {floor_price}'
-                send_text = f'The project {project_name} has new floor price, check it\n{url}'
-                send_email(mail_sender, mail_license, mail_receiver, title, send_text)
-                # 更新
-                last_price = floor_price
+    # with webdriver.Chrome('./chromedriver', chrome_options=option) as browser:
 
-            # 判断是否有新的list
-            new_item_list = []
-            for item in item_list:
-                if item not in last_item_dict:
-                    new_item_list.append(item)
-            if len(new_item_list) != 0:
-                title = f'project {project_name}: there have new list, {new_item_list}'
-                send_text = f'The project {project_name} has new list, {new_item_list}, check it\n{url}'
-                send_email(mail_sender, mail_license, mail_receiver, title, send_text)
-                # 更新
-                last_item_dict.update({key: True for key in item_list})
+    with webdriver.Remote(
+            command_executor="http://127.0.0.1:4444/wd/hub",
+            desired_capabilities=DesiredCapabilities.CHROME,
+            options=option) as browser:
 
-            time.sleep(2)
-    except Exception as e:
-        print(traceback.format_exc())
-    finally:
-        browser.close()
+        browser.set_window_size(2500, 1200)
+
+        print('Init the items info')
+        last_price, last_item_dict = init_items_info(browser, url)
+        print(f'project {project_name}: Begin floor price: {last_price}')
+        try:
+            while True:
+                floor_price, item_list = get_items_info(browser, url)
+                time_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+                print(f'{time_str}: project {project_name}: last {last_price}, now {floor_price}')
+                # 如果小则发邮件
+                if floor_price < last_price:
+                    title = f'project {project_name}: floor price {last_price} -> {floor_price}'
+                    send_text = f'The project {project_name} has new floor price, check it\n{url}'
+                    send_email(mail_sender, mail_license, mail_receiver, title, send_text)
+                    # 更新
+                    last_price = floor_price
+
+                # 判断是否有新的list
+                new_item_list = []
+                for item in item_list:
+                    if item not in last_item_dict:
+                        new_item_list.append(item)
+                if len(new_item_list) != 0:
+                    title = f'project {project_name}: there have new list, {new_item_list}'
+                    send_text = f'The project {project_name} has new list, {new_item_list}, check it\n{url}'
+                    send_email(mail_sender, mail_license, mail_receiver, title, send_text)
+                    # 更新
+                    last_item_dict.update({key: True for key in item_list})
+
+                time.sleep(2 + 2*random.random())
+        except Exception as e:
+            print(traceback.format_exc())
+        finally:
+            browser.close()
