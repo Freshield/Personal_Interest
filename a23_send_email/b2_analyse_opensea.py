@@ -14,7 +14,6 @@
 @                                    Freshield @
 @==============================================@
 """
-import os
 import redis
 import logging
 import traceback
@@ -27,8 +26,8 @@ from lib.set_chrome_options import set_chrome_options
 
 
 if __name__ == '__main__':
-    project_names = ['thestarslabofficial']
-    threshold = 0.0
+    project_names = ['azuki', 'doodles-official']
+    threshold = 0.08
 
     set_logger()
     pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True, db=8)
@@ -70,23 +69,3 @@ if __name__ == '__main__':
             logging.info(traceback.format_exc())
         finally:
             browser.close()
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
-options = Options()
-options.add_argument('--no-sandbox')
-options.add_argument('--headless')
-options.add_argument('--disable-dev-shm-usage')
-options.add_argument("--remote-debugging-port=9222")
-
-try:
-  driver = webdriver.Chrome(chrome_options=options)
-  driver.get("https://www.google.com")
-  s = driver.find_element_by_name("q")
-  assert s.is_displayed() is True
-  print("ok")
-except Exception as ex:
-  print(ex)
-
-driver.quit()
