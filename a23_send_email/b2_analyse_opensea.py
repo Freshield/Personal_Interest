@@ -26,7 +26,8 @@ from lib.set_chrome_options import set_chrome_options
 
 
 if __name__ == '__main__':
-    project_names = ['azuki', 'doodles-official']
+    project_names = ['thestarslabofficial']
+    threshold = 0.0
 
     set_logger()
     pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True, db=8)
@@ -52,12 +53,16 @@ if __name__ == '__main__':
         try:
             while True:
                 index += 1
+                # 检查是否要退出
                 with redis.Redis(connection_pool=pool) as r:
                     exit = r.get('exit')
                     if exit == 'True':
                         raise ValueError('Time to exit')
+                # 遍历项目获取信息
                 for project_name, last_item_dict in project_info_dicts.items():
-                    last_item_dict = fetch_floor_info(browser, project_name, index, last_item_dict)
+                    last_item_dict = fetch_floor_info(
+                        browser, project_name, index, last_item_dict, threshold)
+                    project_info_dicts[project_name] = last_item_dict
                 if index % 20 == 0:
                     index = 0
         except Exception as e:

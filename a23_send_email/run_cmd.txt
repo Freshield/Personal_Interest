@@ -1,3 +1,5 @@
 nohup python b2_analyse_opensea.py >> nohup.log 2>&1 &
 
 sudo docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.1.2-20220217
+
+nohup redis-server >> redis.log 2>&1 &

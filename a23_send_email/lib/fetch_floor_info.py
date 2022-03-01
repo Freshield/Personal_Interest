@@ -23,7 +23,7 @@ from lib.send_email import send_email
 from lib.get_html_mail_content import get_html_mail_content
 
 
-def fetch_floor_info(browser, project_name, index, last_item_dict):
+def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
     """
     访问一次地板信息
     整体流程：
@@ -39,11 +39,11 @@ def fetch_floor_info(browser, project_name, index, last_item_dict):
         logging.info(f'project {project_name}: floor price: {last_price}')
 
     # 2. 分析floor price
-    # 如果不同则发邮件
-    if floor_price != last_price:
+    # 如果不同且大于阈值则发邮件
+    if (floor_price != last_price) and (abs(float(floor_price) - float(last_price)) >= threshold):
         title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
         send_text = get_html_mail_content(
-            f'The project {project_name} has new floor price, check it', url)
+            f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
         send_email(mail_sender, mail_license, mail_receivers, title, send_text)
         logging.info(title)
         # 更新
