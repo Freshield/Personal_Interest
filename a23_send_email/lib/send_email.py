@@ -21,16 +21,14 @@ from email.mime.multipart import MIMEMultipart
 
 
 def send_email(
-        mail_sender, mail_license, receiver, title, send_text,
+        mail_sender, mail_license, receivers, title, send_text,
         mail_host='smtp.163.com', port=25, type='html'):
     """向目标邮箱发送邮件"""
-    receivers = [receiver]
-
     mm = MIMEMultipart('related')
 
     subject_content = title
     mm['From'] = f"opensea_monitor<{mail_sender}>"
-    mm["To"] = f"you<{receiver}>"
+    mm["To"] = ''.join([f"<{item}>" for item in receivers])
     mm["Subject"] = Header(subject_content, 'utf-8')
 
     body_content = send_text
@@ -39,8 +37,15 @@ def send_email(
 
     stp = smtplib.SMTP()
     stp.connect(mail_host, port)
-    stp.set_debuglevel(1)
+    # stp.set_debuglevel(1)
     stp.login(mail_sender, mail_license)
     stp.sendmail(mail_sender, receivers, mm.as_string())
     stp.quit()
 
+
+if __name__ == '__main__':
+    mail_sender = 'opensea_monitor@163.com'
+    mail_license = 'YBORIZCMQYQCCQTX'
+    mail_receivers = ['yangyufresh@163.com', 'yangyufresh@gmail.com']
+
+    send_email(mail_sender, mail_license, mail_receivers, 'test', 'testing')

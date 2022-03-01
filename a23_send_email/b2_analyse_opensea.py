@@ -14,77 +14,52 @@
 @                                    Freshield @
 @==============================================@
 """
-import time
-import random
+import redis
 import logging
 import traceback
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver import ChromeOptions
-from config import mail_sender, mail_license, mail_receiver
 from lib.init_items_info import init_items_info
-from lib.get_items_info import get_items_info
-from lib.send_email import send_email
 from lib.set_logger import set_logger
-from lib.get_html_mail_content import get_html_mail_content
+from lib.fetch_floor_info import fetch_floor_info
+from lib.set_chrome_options import set_chrome_options
 
 
 if __name__ == '__main__':
-    project_name = 'fishyfam'
-    url = f'https://opensea.io/collection/{project_name}?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW'
+    project_names = ['azuki', 'doodles-official']
 
     set_logger()
-    # 设置options参数，以开发者模式运行
-    option = ChromeOptions()
-    # 解决报错，设置无界面运行
-    option.add_argument('--no-sandbox')
-    option.add_argument('--disable-dev-shm-usage')
-    option.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
-    option.add_argument('--headless')
-    user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
-    option.add_argument('user-agent={0}'.format(user_agent))
-
-    # with webdriver.Chrome('./chromedriver', chrome_options=option) as browser:
+    pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True, db=8)
+    with redis.Redis(connection_pool=pool) as r:
+        r.set('exit', 'False')  # 设置 name 对应的值
     logging.info('begin the bot')
-    with webdriver.Remote(
-            command_executor="http://127.0.0.1:4444/wd/hub",
-            desired_capabilities=DesiredCapabilities.CHROME,
-            options=option) as browser:
 
+    with webdriver.Chrome('./chromedriver', chrome_options=set_chrome_options()) as browser:
+    # with webdriver.Remote(
+    #         command_executor="http://127.0.0.1:4444/wd/hub",
+    #         desired_capabilities=DesiredCapabilities.CHROME,
+    #         options=option) as browser:
         browser.set_window_size(2500, 1200)
 
         logging.info('Init the items info')
-        last_price, last_item_dict = init_items_info(browser, url)
+        project_info_dicts = dict()
+        for project_name in project_names:
+            last_item_dict = init_items_info(browser, project_name)
+            logging.info(f'project {project_name}: Begin floor price: {last_item_dict["last_price"]}')
+            project_info_dicts[project_name] = last_item_dict
 
-        logging.info(f'project {project_name}: Begin floor price: {last_price}')
+        index = 0
         try:
             while True:
-                floor_price, item_list = get_items_info(browser, url)
-                # 如果小则发邮件
-                if floor_price < last_price:
-                    title = f'project {project_name}: floor price {last_price} -> {floor_price}'
-                    send_text = get_html_mail_content(
-                        f'The project {project_name} has new floor price, check it', url)
-                    send_email(mail_sender, mail_license, mail_receiver, title, send_text)
-                    logging.info(title)
-                    # 更新
-                    last_price = floor_price
-
-                # 判断是否有新的list
-                new_item_list = []
-                for item in item_list:
-                    if item not in last_item_dict:
-                        new_item_list.append(item)
-                if len(new_item_list) != 0:
-                    title = f'project {project_name}: there have new list, {new_item_list}'
-                    send_text = get_html_mail_content(
-                        f'The project {project_name} has new list, {new_item_list}, check it', url)
-                    send_email(mail_sender, mail_license, mail_receiver, title, send_text)
-                    logging.info(title)
-                    # 更新
-                    last_item_dict.update({key: True for key in item_list})
-
-                time.sleep(2 + 2*random.random())
+                index += 1
+                with redis.Redis(connection_pool=pool) as r:
+                    exit = r.get('exit')
+                    if exit == 'True':
+                        raise ValueError('Time to exit')
+                for project_name, last_item_dict in project_info_dicts.items():
+                    last_item_dict = fetch_floor_info(browser, project_name, index, last_item_dict)
+                if index % 20 == 0:
+                    index = 0
         except Exception as e:
             logging.info(traceback.format_exc())
         finally:

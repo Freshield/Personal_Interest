@@ -15,19 +15,17 @@
 @==============================================@
 """
 import time
-from bs4 import BeautifulSoup
 from lib.get_floor_price import get_floor_price
 from lib.get_item_list import get_item_list
-from lib.get_page_text import get_page_text
 
 
 def get_items_info(browser, url):
     """得到地板价和item信息"""
     # 初始化访问
     browser.get(url)
-    time.sleep(4)
+    time.sleep(3)
     browser.execute_script('window.scrollTo(0,600)')
-    time.sleep(4)
+    time.sleep(3)
 
     floor_price = get_floor_price(browser)
     item_list = get_item_list(browser)
