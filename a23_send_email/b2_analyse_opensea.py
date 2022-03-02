@@ -23,11 +23,13 @@ from lib.init_items_info import init_items_info
 from lib.set_logger import set_logger
 from lib.fetch_floor_info import fetch_floor_info
 from lib.set_chrome_options import set_chrome_options
+from lib.send_email import send_email
+from config import mail_sender, mail_license
 
 
 if __name__ == '__main__':
     project_names = ['azuki', 'doodles-official']
-    threshold = 0.08
+    threshold = 0.05
 
     set_logger()
     pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True, db=8)
@@ -67,5 +69,8 @@ if __name__ == '__main__':
                     index = 0
         except Exception as e:
             logging.info(traceback.format_exc())
+            send_email(
+                mail_sender, mail_license, ['yangyufresh@163.com'],
+                'The program meet bug', traceback.format_exc())
         finally:
-            browser.close()
+            browser.quit()
