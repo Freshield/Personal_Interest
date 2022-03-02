@@ -24,7 +24,7 @@ from lib.set_logger import set_logger
 from lib.fetch_floor_info import fetch_floor_info
 from lib.set_chrome_options import set_chrome_options
 from lib.send_email import send_email
-from config import mail_sender, mail_license
+from config import mail_sender, mail_license, mail_receivers
 
 
 if __name__ == '__main__':
@@ -34,7 +34,9 @@ if __name__ == '__main__':
     set_logger()
     pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True, db=8)
     with redis.Redis(connection_pool=pool) as r:
-        r.set('exit', 'False')  # 设置 name 对应的值
+        r.set('exit', 'False')
+        for receiver in mail_receivers:
+            r.sadd('receivers_set', receiver)
     logging.info('begin the bot')
 
     with webdriver.Chrome('./chromedriver', chrome_options=set_chrome_options()) as browser:

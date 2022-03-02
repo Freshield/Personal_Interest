@@ -35,7 +35,7 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
     url = f'https://opensea.io/collection/{project_name}?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW'
     last_price = last_item_dict['last_price']
     floor_price, item_list = get_items_info(browser, url)
-    if index % 50 == 0:
+    if index % 20 == 0:
         logging.info(f'project {project_name}: floor price: {last_price}')
 
     # 2. 分析floor price
@@ -44,7 +44,7 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
         title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
         send_text = get_html_mail_content(
             f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
-        send_email(mail_sender, mail_license, mail_receivers, title, send_text)
+        send_email(mail_sender, mail_license, title, send_text)
         logging.info(title)
         # 更新
         last_item_dict['last_price'] = floor_price
@@ -59,7 +59,7 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
         title = f'project {project_name}: there have new list, {new_item_list}'
         send_text = get_html_mail_content(
             f'The project {project_name} has new list, {new_item_list}, check it', url)
-        send_email(mail_sender, mail_license, mail_receivers, title, send_text)
+        send_email(mail_sender, mail_license, title, send_text)
         logging.info(title)
         # 更新
         last_item_dict.update({key: True for key in item_list})

@@ -14,6 +14,7 @@
 @                                    Freshield @
 @==============================================@
 """
+import redis
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
@@ -21,9 +22,13 @@ from email.mime.multipart import MIMEMultipart
 
 
 def send_email(
-        mail_sender, mail_license, receivers, title, send_text,
+        mail_sender, mail_license, title, send_text, receivers=None,
         mail_host='smtp.163.com', port=25, type='html'):
     """向目标邮箱发送邮件"""
+    if receivers is None:
+        with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
+            receivers = r.smembers('receivers_set')
+
     mm = MIMEMultipart('related')
 
     subject_content = title
