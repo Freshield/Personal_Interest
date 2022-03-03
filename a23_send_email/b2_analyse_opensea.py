@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     last_item_dict = fetch_floor_info(
                         browser, project_name, index, last_item_dict, threshold)
                     project_info_dicts[project_name] = last_item_dict
-                if index % 20 == 0:
+                if index % 39 == 0:
                     index = 0
         except Exception as e:
             logging.info(traceback.format_exc())

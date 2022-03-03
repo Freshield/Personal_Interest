@@ -17,7 +17,7 @@
 import time
 import random
 import logging
-from config import mail_sender, mail_license, mail_receivers
+from config import mail_sender, mail_license
 from lib.get_items_info import get_items_info
 from lib.send_email import send_email
 from lib.get_html_mail_content import get_html_mail_content
@@ -39,8 +39,10 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
         logging.info(f'project {project_name}: floor price: {last_price}')
 
     # 2. 分析floor price
-    # 如果不同且大于阈值则发邮件
-    if (floor_price != last_price) and (abs(float(floor_price) - float(last_price)) >= threshold):
+    # 如果 两个价格不同 且 绝对值大于阈值 且 时间大于60秒
+    if (floor_price != last_price) and (
+            abs(float(floor_price) - float(last_price)) >= threshold) and (
+            (time.time() - last_item_dict['price_changed_time']) >= 60):
         title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
         send_text = get_html_mail_content(
             f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
@@ -48,6 +50,7 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
         logging.info(title)
         # 更新
         last_item_dict['last_price'] = floor_price
+        last_item_dict['price_changed_time'] = time.time()
 
     # 3. 分析上架的item
     # 判断是否有新的list
