@@ -28,6 +28,10 @@ class MyClient(discord.Client):
         self.my_background_task.start()
 
     async def on_ready(self):
+        with redis.Redis(connection_pool=self.pool) as r:
+            for i in range(r.llen('new_info')):
+                info = r.lpop('new_info')
+                print(info)
         print('Logged in as')
         print(self.user.name)
         print(self.user.id)
