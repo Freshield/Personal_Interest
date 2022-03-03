@@ -63,7 +63,7 @@ if __name__ == '__main__':
         except Exception as e:
             logging.info(traceback.format_exc())
             send_email(
-                mail_sender, mail_license, ['yangyufresh@163.com'],
-                'The program meet bug', traceback.format_exc())
+                mail_sender, mail_license,
+                'The program meet bug', traceback.format_exc(), ['yangyufresh@163.com'])
         finally:
             browser.quit()
