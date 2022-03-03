@@ -31,10 +31,14 @@ def get_item_embed(info_dict):
     embed.set_author(
         name="Opensea Floor Monitor - New Items",
         url="https://twitter.com/freshield2")
+    item_id_str, item_price_str = '', ''
     for item_line in item_list:
         item_id, item_price = item_line.split("_")
-        embed.add_field(name="Item id", value=item_id, inline=True)
-        embed.add_field(name="Item price", value=item_price, inline=True)
+        item_id_str += f'{item_id}\n'
+        item_price_str += f'{item_price}\n'
+    embed.add_field(name="Item id", value=item_id_str, inline=True)
+    embed.add_field(name="Item price", value=item_price_str, inline=True)
+
     embed.add_field(name="Time", value=f"<t:{int(time.time())}>", inline=False)
     embed.set_footer(text="Created by freshield.eth")
 

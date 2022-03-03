@@ -25,7 +25,7 @@ from lib.fetch_floor_info import fetch_floor_info
 from lib.set_chrome_options import set_chrome_options
 from lib.send_email import send_email
 from config import mail_sender, mail_license, mail_receivers, project_names, \
-    threshold, cool_down_time, logging_info_time
+    threshold, cool_down_time, logging_info_time, channel_id_dict
 
 
 if __name__ == '__main__':
@@ -34,6 +34,8 @@ if __name__ == '__main__':
     with redis.Redis(connection_pool=pool) as r:
         for receiver in mail_receivers:
             r.sadd('receivers_set', receiver)
+        for _, channel_id in channel_id_dict.items():
+            r.sadd('channels_set', channel_id)
     logging.info('begin the bot')
 
     with webdriver.Chrome('./chromedriver', chrome_options=set_chrome_options()) as browser:

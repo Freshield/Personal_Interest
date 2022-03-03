@@ -31,10 +31,17 @@ class MyClient(discord.Client):
         channel = client.get_channel(channel_id_dict['二次元社区'])
 
         project_name = "doodles-official"
-        embed = get_price_embed(project_name, 11.1, 10.0)
+        info_dict = {
+            'project_name': project_name, 'last_price': 11.1,
+            'new_price': 10.0
+        }
+        embed = get_price_embed(info_dict)
         await channel.send(embed=embed)
 
-        embed = get_item_embed(project_name, ['1111_11.0'])
+        info_dict = {
+            'project_name': project_name, 'item_list': ['1111_11.0', '2222_10.1']
+        }
+        embed = get_item_embed(info_dict)
         await channel.send(embed=embed)
 
         print('------')
