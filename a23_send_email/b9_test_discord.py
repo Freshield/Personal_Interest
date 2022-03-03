@@ -14,10 +14,13 @@
 @                                    Freshield @
 @==============================================@
 """
+import json
 import redis
 import discord
 from discord.ext import tasks
-from config import discord_token, channel_id_dict
+from config import discord_token, channel_id_dict, discord_test_token
+from lib.get_price_embed import get_price_embed
+from lib.get_items_embed import get_item_embed
 
 
 class MyClient(discord.Client):
@@ -43,8 +46,13 @@ class MyClient(discord.Client):
     async def my_background_task(self):
         with redis.Redis(connection_pool=self.pool) as r:
             for i in range(r.llen('new_info')):
-                info = r.lpop('new_info')
-                print(info)
+                info_dict = json.loads(r.lpop('new_info'))
+                print(info_dict)
+                embed = get_price_embed(info_dict) \
+                    if info_dict['type'] == 'price' else get_item_embed(info_dict)
+
+                # channel = client.get_channel(channel_id_dict['二次元社区'])
+                # await channel.send(embed=embed)
                 for key, channel_id in channel_id_dict.items():
                     channel = client.get_channel(channel_id)
                     await channel.send(info)

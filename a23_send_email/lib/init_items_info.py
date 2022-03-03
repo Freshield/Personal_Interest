@@ -44,6 +44,7 @@ def init_items_info(browser, project_name):
 
     item_dict = {key: True for key in item_list}
     item_dict['last_price'] = floor_price
+    item_dict['lastlast_price'] = -1
     item_dict['price_changed_time'] = time.time()
 
     return item_dict

@@ -14,17 +14,18 @@
 @                                    Freshield @
 @==============================================@
 """
+import time
 import redis
 import logging
 import traceback
 from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from lib.init_items_info import init_items_info
 from lib.set_logger import set_logger
 from lib.fetch_floor_info import fetch_floor_info
 from lib.set_chrome_options import set_chrome_options
 from lib.send_email import send_email
-from config import mail_sender, mail_license, mail_receivers, project_names, threshold,cool_down_time
+from config import mail_sender, mail_license, mail_receivers, project_names, \
+    threshold, cool_down_time, logging_info_time
 
 
 if __name__ == '__main__':
@@ -49,17 +50,20 @@ if __name__ == '__main__':
             logging.info(f'project {project_name}: Begin floor price: {last_item_dict["last_price"]}')
             project_info_dicts[project_name] = last_item_dict
 
-        index = 0
+        begin_time = time.time()
         try:
             while True:
-                index += 1
                 # 遍历项目获取信息
                 for project_name, last_item_dict in project_info_dicts.items():
                     last_item_dict = fetch_floor_info(
-                        browser, project_name, index, last_item_dict, threshold, cool_down_time)
+                        browser, project_name, last_item_dict, threshold, cool_down_time)
                     project_info_dicts[project_name] = last_item_dict
-                if index % 39 == 0:
-                    index = 0
+                # 如果大于打log的时间则显示
+                if (time.time() - begin_time) >= logging_info_time:
+                    for project_name, last_item_dict in project_info_dicts.items():
+                        logging.info(
+                            f'project {project_name}: floor price: {last_item_dict["last_price"]}')
+                    begin_time = time.time()
         except Exception as e:
             logging.info(traceback.format_exc())
             send_email(
