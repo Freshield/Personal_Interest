@@ -106,4 +106,4 @@ class MyClient(discord.Client):
         await self.wait_until_ready() # wait until the bot logs in
 
 client = MyClient()
-client.run('OTQ4NzgxNTAzMTE3MTMxODI2.YiAzoQ.gcTXtud_kfEiWgfh4YQej4q9laA')
+client.run('')
