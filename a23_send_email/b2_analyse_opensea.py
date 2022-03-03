@@ -24,17 +24,13 @@ from lib.set_logger import set_logger
 from lib.fetch_floor_info import fetch_floor_info
 from lib.set_chrome_options import set_chrome_options
 from lib.send_email import send_email
-from config import mail_sender, mail_license, mail_receivers
+from config import mail_sender, mail_license, mail_receivers, project_names, threshold,cool_down_time
 
 
 if __name__ == '__main__':
-    project_names = ['azuki', 'doodles-official']
-    threshold = 0.05
-
     set_logger()
     pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True, db=8)
     with redis.Redis(connection_pool=pool) as r:
-        r.set('exit', 'False')
         for receiver in mail_receivers:
             r.sadd('receivers_set', receiver)
     logging.info('begin the bot')
@@ -57,15 +53,10 @@ if __name__ == '__main__':
         try:
             while True:
                 index += 1
-                # 检查是否要退出
-                with redis.Redis(connection_pool=pool) as r:
-                    exit = r.get('exit')
-                    if exit == 'True':
-                        raise ValueError('Time to exit')
                 # 遍历项目获取信息
                 for project_name, last_item_dict in project_info_dicts.items():
                     last_item_dict = fetch_floor_info(
-                        browser, project_name, index, last_item_dict, threshold)
+                        browser, project_name, index, last_item_dict, threshold, cool_down_time)
                     project_info_dicts[project_name] = last_item_dict
                 if index % 39 == 0:
                     index = 0

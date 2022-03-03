@@ -15,6 +15,7 @@
 @==============================================@
 """
 import time
+import redis
 import random
 import logging
 from config import mail_sender, mail_license
@@ -23,7 +24,7 @@ from lib.send_email import send_email
 from lib.get_html_mail_content import get_html_mail_content
 
 
-def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
+def fetch_floor_info(browser, project_name, index, last_item_dict, threshold, cool_down_time):
     """
     访问一次地板信息
     整体流程：
@@ -42,11 +43,15 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
     # 如果 两个价格不同 且 绝对值大于阈值 且 时间大于60秒
     if (floor_price != last_price) and (
             abs(float(floor_price) - float(last_price)) >= threshold) and (
-            (time.time() - last_item_dict['price_changed_time']) >= 60):
+            (time.time() - last_item_dict['price_changed_time']) >= cool_down_time):
         title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
         send_text = get_html_mail_content(
             f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
-        send_email(mail_sender, mail_license, title, send_text)
+
+        with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
+            r.rpush('new_info', f'{title}\n{url}')
+            receivers = r.smembers('receivers_set')
+        send_email(mail_sender, mail_license, title, send_text, receivers)
         logging.info(title)
         # 更新
         last_item_dict['last_price'] = floor_price
@@ -62,7 +67,10 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold):
         title = f'project {project_name}: there have new list, {new_item_list}'
         send_text = get_html_mail_content(
             f'The project {project_name} has new list, {new_item_list}, check it', url)
-        send_email(mail_sender, mail_license, title, send_text)
+        with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
+            r.rpush('new_info', f'{title}\n{url}')
+            receivers = r.smembers('receivers_set')
+        send_email(mail_sender, mail_license, title, send_text, receivers)
         logging.info(title)
         # 更新
         last_item_dict.update({key: True for key in item_list})
