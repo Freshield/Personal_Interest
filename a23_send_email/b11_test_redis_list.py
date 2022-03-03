@@ -16,7 +16,12 @@
 """
 import redis
 
+# with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
+#     print(r.llen('test'))
+#     for i in range(r.llen('test')):
+#         print(r.lpop('test'))
+
 with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
-    print(r.llen('test'))
-    for i in range(r.llen('test')):
-        print(r.lpop('test'))
+    receivers = r.smembers('receivers_set')
+    print(receivers)
+    print(type(receivers))

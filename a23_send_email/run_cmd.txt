@@ -5,6 +5,7 @@ wget "http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/goo
 wget "https://repo.anaconda.com/miniconda/Miniconda3-py38_4.11.0-Linux-x86_64.sh"
 wget "https://chromedriver.storage.googleapis.com/98.0.4758.102/chromedriver_linux64.zip"
 wget "https://github.com/Freshield/Personal_Interest/raw/master/a23_send_email/run_files"
+wget "https://raw.githubusercontent.com/Freshield/Personal_Interest/master/a23_send_email/b9_test_discord.py"
 source ~/.bashrc
 
 nohup python b2_analyse_opensea.py >> nohup.log 2>&1 &

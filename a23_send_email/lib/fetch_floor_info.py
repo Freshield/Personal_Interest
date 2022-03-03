@@ -50,7 +50,7 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold, co
 
         with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
             r.rpush('new_info', f'{title}\n{url}')
-            receivers = r.smembers('receivers_set')
+            receivers = list(r.smembers('receivers_set'))
         send_email(mail_sender, mail_license, title, send_text, receivers)
         logging.info(title)
         # 更新
@@ -69,7 +69,7 @@ def fetch_floor_info(browser, project_name, index, last_item_dict, threshold, co
             f'The project {project_name} has new list, {new_item_list}, check it', url)
         with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
             r.rpush('new_info', f'{title}\n{url}')
-            receivers = r.smembers('receivers_set')
+            receivers = list(r.smembers('receivers_set'))
         send_email(mail_sender, mail_license, title, send_text, receivers)
         logging.info(title)
         # 更新
