@@ -40,27 +40,34 @@ def fetch_floor_info(browser, project_name, last_item_dict, threshold, cool_down
     floor_price, item_list = get_items_info(browser, url)
 
     # 2. 分析floor price
-    threshold = threshold if floor_price != lastlast_price else 2 * threshold
+    if floor_price == lastlast_price:
+        last_item_dict['lastlast_price_equal'] = True
     # 如果 两个价格不同 且 绝对值大于阈值 且 时间大于阈值
     if (floor_price != last_price) and (
             abs(float(floor_price) - float(last_price)) >= threshold) and (
             (time.time() - last_item_dict['price_changed_time']) >= cool_down_time):
-        title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
-        send_text = get_html_mail_content(
-            f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
+        # 如果地板价在动荡
+        if last_item_dict['lastlast_price_equal'] and (
+                (time.time() - last_item_dict['price_changed_time']) < 3 * cool_down_time):
+            pass
+        else:
+            last_item_dict['lastlast_price_equal'] = False
+            title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
+            send_text = get_html_mail_content(
+                f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
 
-        with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
-            info_dict = {
-                'type': 'price', 'project_name': project_name,
-                'last_price': last_price, 'new_price': floor_price}
-            r.rpush('new_info', json.dumps(info_dict))
-            receivers = list(r.smembers('receivers_set'))
-        send_email(mail_sender, mail_license, title, send_text, receivers)
-        logging.info(title)
-        # 更新
-        last_item_dict['lastlast_price'] = last_price
-        last_item_dict['last_price'] = floor_price
-        last_item_dict['price_changed_time'] = time.time()
+            with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
+                info_dict = {
+                    'type': 'price', 'project_name': project_name,
+                    'last_price': last_price, 'new_price': floor_price}
+                r.rpush('new_info', json.dumps(info_dict))
+                receivers = list(r.smembers('receivers_set'))
+            send_email(mail_sender, mail_license, title, send_text, receivers)
+            logging.info(title)
+            # 更新
+            last_item_dict['lastlast_price'] = last_price
+            last_item_dict['last_price'] = floor_price
+            last_item_dict['price_changed_time'] = time.time()
 
     # 3. 分析上架的item
     # 判断是否有新的list

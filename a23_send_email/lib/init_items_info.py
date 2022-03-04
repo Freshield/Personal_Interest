@@ -46,5 +46,6 @@ def init_items_info(browser, project_name):
     item_dict['last_price'] = floor_price
     item_dict['lastlast_price'] = -1
     item_dict['price_changed_time'] = time.time()
+    item_dict['lastlast_price_equal'] = False
 
     return item_dict

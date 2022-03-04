@@ -39,10 +39,6 @@ if __name__ == '__main__':
     logging.info('begin the bot')
 
     with webdriver.Chrome('./chromedriver', chrome_options=set_chrome_options()) as browser:
-    # with webdriver.Remote(
-    #         command_executor="http://127.0.0.1:4444/wd/hub",
-    #         desired_capabilities=DesiredCapabilities.CHROME,
-    #         options=option) as browser:
         browser.set_window_size(2500, 1200)
 
         logging.info('Init the items info')
