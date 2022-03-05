@@ -66,6 +66,6 @@ if __name__ == '__main__':
             logging.info(traceback.format_exc())
             send_email(
                 mail_sender, mail_license,
-                'The program meet bug', traceback.format_exc(), ['yangyufresh@163.com'])
-        finally:
-            browser.quit()
+                'The program meet bug', traceback.format_exc(), [mail_receivers[0]])
+        # finally:
+        #     browser.quit()

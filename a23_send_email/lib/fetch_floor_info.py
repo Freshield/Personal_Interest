@@ -48,7 +48,7 @@ def fetch_floor_info(browser, project_name, last_item_dict, threshold, cool_down
             (time.time() - last_item_dict['price_changed_time']) >= cool_down_time):
         # 如果地板价在动荡
         if last_item_dict['lastlast_price_equal'] and (
-                (time.time() - last_item_dict['price_changed_time']) < 3 * cool_down_time):
+                (time.time() - last_item_dict['price_changed_time']) < 4 * cool_down_time):
             pass
         else:
             last_item_dict['lastlast_price_equal'] = False

@@ -23,7 +23,7 @@ def get_floor_price(browser):
     text = get_page_text(browser)
     # 尝试2次 如果都没有则退出
     if ('owners' not in text) or ('floor price' not in text):
-        time.sleep(3)
+        time.sleep(4)
         text = get_page_text(browser)
     if ('owners' not in text) or ('floor price' not in text):
         return None
