@@ -20,8 +20,8 @@ import discord
 import traceback
 from discord.ext import tasks
 from config import discord_token, channel_id_dict, discord_test_token
-from lib.get_price_embed import get_price_embed
-from lib.get_items_embed import get_item_embed
+from lib.send_email_to_register import send_email_to_register
+from lib.send_dc_to_register import send_dc_to_register
 
 
 class MyClient(discord.Client):
@@ -48,16 +48,14 @@ class MyClient(discord.Client):
         try:
             with redis.Redis(connection_pool=self.pool) as r:
                 for i in range(r.llen('new_info')):
-                    info_dict = json.loads(r.lpop('new_info'))
+                    info = r.lpop('new_info')
+                    print(info)
+                    info_dict = json.loads(info)
+                    # email
+                    send_email_to_register(info_dict)
+                    # dc
+                    await send_dc_to_register(client, info_dict)
                     print(info_dict)
-                    embed = get_price_embed(info_dict) \
-                        if info_dict['type'] == 'price' else get_item_embed(info_dict)
-
-                    # channel = client.get_channel(channel_id_dict['二次元社区'])
-                    # await channel.send(embed=embed)
-                    for channel_id in list(r.smembers('channels_set')):
-                        channel = client.get_channel(int(channel_id))
-                        await channel.send(embed=embed)
         except Exception as e:
             print(traceback.format_exc())
 

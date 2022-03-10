@@ -16,6 +16,7 @@
 """
 import time
 import discord
+from config import project_thumbnail_dict
 
 
 def get_price_embed(info_dict):
@@ -32,6 +33,7 @@ def get_price_embed(info_dict):
     embed.set_author(
         name="Opensea Floor Monitor - New Price",
         url="https://twitter.com/freshield2")
+    embed.set_thumbnail(url=project_thumbnail_dict[project_name])
     embed.add_field(name="Last price", value=last_price, inline=True)
     embed.add_field(name="New price", value=new_price, inline=True)
     embed.add_field(name="Time", value=f"<t:{int(time.time())}>", inline=False)

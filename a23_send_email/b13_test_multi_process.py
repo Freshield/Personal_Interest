@@ -2,9 +2,9 @@
 """
 @Author: Freshield
 @Contact: yangyufresh@163.com
-@File: b2_analyse_opensea.py
-@Time: 2022-02-28 11:56
-@Last_update: 2022-02-28 11:56
+@File: b13_test_multi_process.py
+@Time: 2022-03-10 15:23
+@Last_update: 2022-03-10 15:23
 @Desc: None
 @==============================================@
 @      _____             _   _     _   _       @
@@ -14,18 +14,21 @@
 @                                    Freshield @
 @==============================================@
 """
-import logging
+import time
 from concurrent.futures import ProcessPoolExecutor
-from lib.set_logger import set_logger
-from config import project_names
-from lib.run_single_project import run_single_project
+
+
+def test(num):
+    print(f'here, {num}')
+    time.sleep(num)
+    print(f'done, {num}')
+    return num
 
 
 if __name__ == '__main__':
-    set_logger()
-    logging.info('begin the bot')
+    with ProcessPoolExecutor(4) as executor:
+        rst = executor.map(test, [1,2,3,4])
 
-    logging.info('Init the items info')
-    with ProcessPoolExecutor(len(project_names)) as executor:
-        executor.map(run_single_project, project_names)
+    rst = list(rst)
 
+    print(rst)

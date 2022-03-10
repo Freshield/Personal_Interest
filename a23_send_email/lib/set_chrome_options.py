@@ -17,7 +17,7 @@
 from selenium.webdriver import ChromeOptions
 
 
-def set_chrome_options():
+def set_chrome_options(proxy=False):
     """设置chrome的参数"""
     # 设置options参数，以开发者模式运行
     option = ChromeOptions()
@@ -29,5 +29,7 @@ def set_chrome_options():
     option.add_argument('--headless')
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
     option.add_argument('user-agent={0}'.format(user_agent))
+    if proxy:
+        option.add_argument('proxy-server=http://127.0.0.1:7890')
 
     return option

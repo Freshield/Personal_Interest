@@ -38,6 +38,9 @@ def fetch_floor_info(browser, project_name, last_item_dict, threshold, cool_down
     last_price = last_item_dict['last_price']
     lastlast_price = last_item_dict['lastlast_price']
     floor_price, item_list = get_items_info(browser, url)
+    if floor_price is None:
+        logging.info(f'Warning: get None floor price')
+        return last_item_dict
 
     # 2. 分析floor price
     if floor_price == lastlast_price:
@@ -52,18 +55,14 @@ def fetch_floor_info(browser, project_name, last_item_dict, threshold, cool_down
             pass
         else:
             last_item_dict['lastlast_price_equal'] = False
-            title = f'project {project_name}: floor price changed， {last_price} -> {floor_price}'
-            send_text = get_html_mail_content(
-                f'The project {project_name} has new floor price, check it， {last_price} -> {floor_price}', url)
 
             with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
                 info_dict = {
                     'type': 'price', 'project_name': project_name,
                     'last_price': last_price, 'new_price': floor_price}
                 r.rpush('new_info', json.dumps(info_dict))
-                receivers = list(r.smembers('receivers_set'))
-            send_email(mail_sender, mail_license, title, send_text, receivers)
-            logging.info(title)
+
+            logging.info(info_dict)
             # 更新
             last_item_dict['lastlast_price'] = last_price
             last_item_dict['last_price'] = floor_price
@@ -76,22 +75,18 @@ def fetch_floor_info(browser, project_name, last_item_dict, threshold, cool_down
         if item not in last_item_dict:
             new_item_list.append(item)
     if len(new_item_list) != 0:
-        title = f'project {project_name}: there have new list, {new_item_list}'
-        send_text = get_html_mail_content(
-            f'The project {project_name} has new list, {new_item_list}, check it', url)
         with redis.Redis(host='localhost', port=6379, decode_responses=True, db=8) as r:
             info_dict = {
                 'type': 'item', 'project_name': project_name,
                 'item_list': new_item_list
             }
             r.rpush('new_info', json.dumps(info_dict))
-            receivers = list(r.smembers('receivers_set'))
-        send_email(mail_sender, mail_license, title, send_text, receivers)
-        logging.info(title)
+
+        logging.info(info_dict)
         # 更新
         last_item_dict.update({key: True for key in item_list})
         last_item_dict['price_changed_time'] = time.time()
 
-    time.sleep(2 + 2 * random.random())
+    time.sleep(3 + 2 * random.random())
 
     return last_item_dict

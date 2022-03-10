@@ -23,9 +23,9 @@ def get_items_info(browser, url):
     """得到地板价和item信息"""
     # 初始化访问
     browser.get(url)
-    time.sleep(3)
+    time.sleep(4)
     browser.execute_script('window.scrollTo(0,600)')
-    time.sleep(3)
+    time.sleep(4)
 
     floor_price = get_floor_price(browser)
     item_list = get_item_list(browser)

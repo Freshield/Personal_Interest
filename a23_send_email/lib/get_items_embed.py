@@ -16,6 +16,7 @@
 """
 import time
 import discord
+from config import project_thumbnail_dict
 
 
 def get_item_embed(info_dict):
@@ -31,6 +32,7 @@ def get_item_embed(info_dict):
     embed.set_author(
         name="Opensea Floor Monitor - New Items",
         url="https://twitter.com/freshield2")
+    embed.set_thumbnail(url=project_thumbnail_dict[project_name])
     item_id_str, item_price_str = '', ''
     for item_line in item_list:
         item_id, item_price = item_line.split("_")
