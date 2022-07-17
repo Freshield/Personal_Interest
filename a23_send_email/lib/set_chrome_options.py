@@ -26,7 +26,8 @@ def set_chrome_options(proxy=False):
     option.add_argument('--disable-dev-shm-usage')
     option.add_argument("--disable-setuid-sandbox")
     option.add_argument('blink-settings=imagesEnabled=false')  # 不加载图片, 提升速度
-    option.add_argument('--headless')
+    option.add_argument("--disable-blink-features=AutomationControlled")
+    # option.add_argument('--headless')
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
     option.add_argument('user-agent={0}'.format(user_agent))
     if proxy:

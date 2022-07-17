@@ -32,3 +32,6 @@ Data
 *.png
 *.jpg
 *chromedriver
+*.xml
+*.iml
+*.log
