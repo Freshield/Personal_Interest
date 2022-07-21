@@ -20,7 +20,7 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 
 
-url = 'https://mirror.xyz/freshield.eth/R0M1Aa-E5bJ3Y4KATgF8L9Kg3D1p_e7Zoy-llpYQ1OI'
+url = 'https://mirror.xyz/freshield.eth/jJN9V9a15IV-lx8BBNhTo41w3Ms8LoDDlpJsQwKgi-U'
 chrome_options = Options()
 # 启动无头模式，实际上是用命令行来对Google浏览器进行限制
 chrome_options.add_argument('--headless')
