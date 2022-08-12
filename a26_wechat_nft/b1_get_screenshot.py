@@ -20,14 +20,14 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 
 
-url = 'https://mirror.xyz/freshield.eth/jJN9V9a15IV-lx8BBNhTo41w3Ms8LoDDlpJsQwKgi-U'
+url = 'https://mirror.xyz/freshield.eth/WHpuspHj-dTRnVQ1Uo8X-8hXLbbjO1iqzN3YzU9lQuU'
 chrome_options = Options()
 # 启动无头模式，实际上是用命令行来对Google浏览器进行限制
 chrome_options.add_argument('--headless')
 # chrome_options.add_argument('--proxy-server=http://127.0.0.1:7890')
 
 driver = Chrome(os.path.abspath('./chromedriver'), options=chrome_options)
-driver.set_window_size(1200, 1800)
+driver.set_window_size(1200, 2200)
 
 driver.get(url)
 time.sleep(2)
