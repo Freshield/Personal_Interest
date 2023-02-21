@@ -5,7 +5,310 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0db63d51-98d7-44e0-a7da-35a8e3486047" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Personal_Interest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal_Interest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/.idea/Interview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/.idea/Interview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/print_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/print_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview/two_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/two_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jupyter_para" beforeDir="false" afterPath="$PROJECT_DIR$/Jupyter_para" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/01_WZRY_ability_research.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/01_WZRY_ability_research.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a01_WZRY_ability_research/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a01_WZRY_ability_research/look_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/a01_WZRY_ability_research/look_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a02_R_n_squares/.idea/02_R_n_squares.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a02_R_n_squares/.idea/02_R_n_squares.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a02_R_n_squares/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a02_R_n_squares/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a02_R_n_squares/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a02_R_n_squares/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a02_R_n_squares/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a02_R_n_squares/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a02_R_n_squares/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/a02_R_n_squares/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a02_R_n_squares/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/a02_R_n_squares/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/03_DICOM_Processing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/03_DICOM_Processing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/.ipynb_checkpoints/Example-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/.ipynb_checkpoints/Example-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/.ipynb_checkpoints/dujie_CT-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/.ipynb_checkpoints/dujie_CT-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/01_PreProcess_Tutorial/.ipynb_checkpoints/Preprocess_tutorial-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/01_PreProcess_Tutorial/.ipynb_checkpoints/Preprocess_tutorial-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/01_PreProcess_Tutorial/Preprocess_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/01_PreProcess_Tutorial/Preprocess_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/01_PreProcess_Tutorial/Preprocess_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/01_PreProcess_Tutorial/Preprocess_tutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/Example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/Example.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/Example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/dujie_CT.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/dujie_CT.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a03_DICOM_Processing/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/a03_DICOM_Processing/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/.idea/04_codeline_UI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/.idea/04_codeline_UI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/01_test_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/01_test_tutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a04_codeline_UI/02_test_tutorial2.py" beforeDir="false" afterPath="$PROJECT_DIR$/a04_codeline_UI/02_test_tutorial2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/.idea/05_noobPython_class.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/.idea/05_noobPython_class.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/01_simple_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/01_simple_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/02_inner_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/02_inner_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/03_GC_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/03_GC_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/04_test_linking.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/04_test_linking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/05_subclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/05_subclass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/06_override_computer.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/06_override_computer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a05_noobPython_class/07_private_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/a05_noobPython_class/07_private_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/06_wav_to_mp3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/06_wav_to_mp3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/01_test_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/01_test_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/02_test_lame.py" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/02_test_lame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/03_test_soundconverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/03_test_soundconverter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/a4_test_ffmpeg.py" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/a4_test_ffmpeg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/b1_new_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/b1_new_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/c1_test_from_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/a06_wav_to_mp3/b1_new_test/c1_test_from_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/.idea/07_learn_shell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/.idea/07_learn_shell.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a10_calculate_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a10_calculate_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a11_relation_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a11_relation_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a12_bool_cal_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a12_bool_cal_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a13_logic_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a13_logic_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a14_str_cal_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a14_str_cal_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a15_file_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a15_file_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a16_echo_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a16_echo_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a17_printf_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a17_printf_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a18_test_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a18_test_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a19_condition_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a19_condition_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a1_hello_world.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a1_hello_world.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a20_case_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a20_case_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a21_func_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a21_func_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a2_var_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a2_var_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a3_var_test1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a3_var_test1.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a4_var_test2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a4_var_test2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a5_str_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a5_str_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a6_array_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a6_array_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a7_para_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a7_para_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a8_para_test2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a8_para_test2.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/a9_array_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/a9_array_test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a07_learn_shell/testfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a07_learn_shell/testfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/a10_learn_mysqlclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/a10_learn_mysqlclient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/b1_head_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/b1_head_first.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a10_learn_mysqlclient/b2_fine_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/a10_learn_mysqlclient/b2_fine_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/a11_grandfather_chang_files_name.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/a11_grandfather_chang_files_name.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a11_grandfather_chang_files_name/b1_do_it.py" beforeDir="false" afterPath="$PROJECT_DIR$/a11_grandfather_chang_files_name/b1_do_it.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/.idea/a12_test_weibo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/.idea/a12_test_weibo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/a1_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/a1_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/a2_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/a2_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/CHANGES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/CHANGES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/README" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/snspy.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/snspy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/weibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/sinaweibopy-master/weibo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/snspy.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/snspy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12_test_weibo/weibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/a12_test_weibo/weibo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/.idea/a13_try_logging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/.idea/a13_try_logging.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/b1_first_try.py" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/b1_first_try.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/b2_file_logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/b2_file_logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/b3_try_diff_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/b3_try_diff_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/b4_tryhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/b4_tryhandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/func_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/func_a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a13_try_logging/func_b.py" beforeDir="false" afterPath="$PROJECT_DIR$/a13_try_logging/func_b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/.idea/a14_try_hdf5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/.idea/a14_try_hdf5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b1_try_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b1_try_first.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b2_slice.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b2_slice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b3_block_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b3_block_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b4_extend_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b4_extend_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b5_creating_a_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b5_creating_a_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b6_core_concepts.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b6_core_concepts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14_try_hdf5/b7_check_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/a14_try_hdf5/b7_check_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/.idea/a15_make_gif.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/.idea/a15_make_gif.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/b1_test_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/b1_test_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a15_make_gif/b2_make_gif.py" beforeDir="false" afterPath="$PROJECT_DIR$/a15_make_gif/b2_make_gif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/.idea/a16_learn_canny.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/.idea/a16_learn_canny.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/b0_get_img_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/b0_get_img_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/b1_gray.py" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/b1_gray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/b2_smooth.py" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/b2_smooth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/b3_gradients.py" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/b3_gradients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/b4_nms.py" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/b4_nms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a16_learn_canny/b5_double_threshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/a16_learn_canny/b5_double_threshold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/.idea/a17_unzip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/.idea/a17_unzip.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a17_unzip/a1_try_unzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/a17_unzip/a1_try_unzip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/.idea/a18_process_gif.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/.idea/a18_process_gif.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/b1_try_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/b1_try_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/b2_resize.py" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/b2_resize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a18_process_gif/b3_sample_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/a18_process_gif/b3_sample_save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/.idea/a19_get_code_as_file.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/.idea/a19_get_code_as_file.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a19_get_code_as_file/b1_test_get_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/a19_get_code_as_file/b1_test_get_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/.idea/a20_memory_monitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/.idea/a20_memory_monitor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/b1_memory_profiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/b1_memory_profiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/mprofile_20200511212535.dat" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/mprofile_20200511212535.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/mprofile_20200511212822.dat" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/mprofile_20200511212822.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a20_memory_monitor/mprofile_20200511214529.dat" beforeDir="false" afterPath="$PROJECT_DIR$/a20_memory_monitor/mprofile_20200511214529.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/a21_try_uwsgi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/a21_try_uwsgi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/b1_foobar.py" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/b1_foobar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/b1_uwsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/b1_uwsgi.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/b2_myflaskapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/b2_myflaskapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/b2_uwsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/b2_uwsgi.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/log/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/log/uwsgi.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/update_code.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/update_code.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a21_try_uwsgi/uwsgi.pid" beforeDir="false" afterPath="$PROJECT_DIR$/a21_try_uwsgi/uwsgi.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b0_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b0_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b1_head_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b1_head_first.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b2_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b2_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b3_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b3_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b4_application.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b4_application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b5_reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b5_reverse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b6_para.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b6_para.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b7_post_para.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b7_post_para.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a22_tornado/b8_header.py" beforeDir="false" afterPath="$PROJECT_DIR$/a22_tornado/b8_header.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/a23_send_email.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/a23_send_email.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b10_async_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b10_async_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b11_test_redis_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b11_test_redis_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b12_test_dc_text_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b12_test_dc_text_format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b13_test_multi_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b13_test_multi_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b14_delete_inter_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b14_delete_inter_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b15_test_get_opensea_twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b15_test_get_opensea_twitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b1_smtp.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b1_smtp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b2_analyse_opensea.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b2_analyse_opensea.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b3_check_list_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b3_check_list_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b4_test_remote.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b4_test_remote.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b5_logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b5_logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b6_test_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b6_test_redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b7_simple_selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b7_simple_selenium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b8_diff_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b8_diff_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/b9_test_discord.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/b9_test_discord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/fetch_floor_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/fetch_floor_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_floor_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_floor_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_html_mail_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_html_mail_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_item_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_item_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_items_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_items_embed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_items_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_items_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_page_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_page_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/get_price_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/get_price_embed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/init_items_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/init_items_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/init_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/init_redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/run_single_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/run_single_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/send_dc_to_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/send_dc_to_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/send_email_to_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/send_email_to_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/set_chrome_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/set_chrome_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/lib/set_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/lib/set_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/run_cmd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/run_cmd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/run_files" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/run_files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a23_send_email/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a23_send_email/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a24_milvus/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a24_milvus/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a24_milvus/a1_hello_milvus.py" beforeDir="false" afterPath="$PROJECT_DIR$/a24_milvus/a1_hello_milvus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a25_delete_mac_trash/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a25_delete_mac_trash/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a25_delete_mac_trash/TAG.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/a25_delete_mac_trash/TAG.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a25_delete_mac_trash/b1_delete_mac_trash.py" beforeDir="false" afterPath="$PROJECT_DIR$/a25_delete_mac_trash/b1_delete_mac_trash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a25_delete_mac_trash/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a25_delete_mac_trash/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a26_wechat_nft/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/a26_wechat_nft/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a26_wechat_nft/b1_get_screenshot.py" beforeDir="false" afterPath="$PROJECT_DIR$/a26_wechat_nft/b1_get_screenshot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/.idea/a8_learn_re.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/.idea/a8_learn_re.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/b1_re_noob_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/b1_re_noob_match.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/b2_re_noob_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/b2_re_noob_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8_learn_re/b3_re_noob_sub.py" beforeDir="false" afterPath="$PROJECT_DIR$/a8_learn_re/b3_re_noob_sub.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/.idea/a9_learn_markdown.iml" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/.idea/a9_learn_markdown.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/b1_example.md" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/b1_example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/b2_begin_test.md" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/b2_begin_test.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a9_learn_markdown/classification_module.md" beforeDir="false" afterPath="$PROJECT_DIR$/a9_learn_markdown/classification_module.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_transfer/sample_json_imgs" beforeDir="false" afterPath="$PROJECT_DIR$/data_transfer/sample_json_imgs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/王者荣耀 英雄数据.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +374,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/freshield/projects/Personal_Interest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/freshield/LOCAL_MIRROR/codes/person/Personal_Interest/a30_crawl_download",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -95,6 +400,7 @@
       <workItem from="1586333609137" duration="875000" />
       <workItem from="1654149017775" duration="644000" />
       <workItem from="1654150518540" duration="599000" />
+      <workItem from="1675159149989" duration="10000" />
     </task>
     <servers />
   </component>
@@ -129,6 +435,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/a19_get_code_as_file/data/file.txt">

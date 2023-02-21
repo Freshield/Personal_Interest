@@ -20,16 +20,17 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 
 
-url = 'https://mirror.xyz/freshield.eth/WHpuspHj-dTRnVQ1Uo8X-8hXLbbjO1iqzN3YzU9lQuU'
+url = 'https://freshield.medium.com/00049-20221111-83a8a64eab10'
 chrome_options = Options()
 # 启动无头模式，实际上是用命令行来对Google浏览器进行限制
-chrome_options.add_argument('--headless')
-# chrome_options.add_argument('--proxy-server=http://127.0.0.1:7890')
+# chrome_options.add_argument('--headless')
+chrome_options.add_argument('--proxy-server=http://127.0.0.1:7890')
+# chrome_options.binary_location = '/Users/yang.yu/Downloads/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 driver = Chrome(os.path.abspath('./chromedriver'), options=chrome_options)
-driver.set_window_size(1200, 2200)
+driver.set_window_size(2200, 3500)
 
 driver.get(url)
-time.sleep(2)
+time.sleep(4)
 driver.save_screenshot('data/test.png')
 driver.close()
